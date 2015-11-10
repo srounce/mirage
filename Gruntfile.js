@@ -101,7 +101,7 @@ module.exports = function(grunt) {
     sass: {
       build: {
         files: {
-          '<%= paths.build %>/mirage.scss': '<%= paths.src %>/sass/mirage.scss'
+          '<%= paths.build %>/mirage.css': '<%= paths.src %>/sass/mirage.scss'
         }
       },
       options: {
