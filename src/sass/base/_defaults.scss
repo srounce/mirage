@@ -1,0 +1,89 @@
+// =====================================================
+// BASE.DEFAULTS
+// =====================================================
+//
+// This file contains the default settings for the theme. You shouldn't need to
+// modify anything in this file to modify the look and feel of the theme, instead
+// you should override the settings in the `_settings.scss` file.
+
+
+// BASE
+// -----------------------------------------------------
+
+$base-font-size: 16px !default;
+$base-line-height: 1.4 !default;
+
+
+/// GLOBAL
+// -----------------------------------------------------
+
+// We use these to define default font stacks
+$font-family-sans-serif: 'open-sans-light', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-monospace: Inconsolata, "Source Code Pro", menlo, monaco, Consolas, "Liberation Mono", Courier, monospace !default;
+
+// We use these as default colors throughout
+$primary-color: #1ab394 !default;
+$secondary-color: #2f4050 !default;
+$alert-color: #f04124 !default;
+$success-color: #43ac6a !default;
+$warning-color: #f08a24 !default;
+$info-color: #a0d3e8 !default;
+
+$body-font-family: $font-family-sans-serif !default;
+$body-bg-color: #ececec !default;
+
+
+// MAIN-PANEL
+// -----------------------------------------------------
+$main-panel-bg-color: #f9f9f9 !default;
+$main-panel-border-color: #ccc !default;
+
+
+// SIDE-PANEL
+// -----------------------------------------------------
+$side-panel-bg-color: $secondary-color !default;
+$side-panel-font-color: #a7b1c2 !default;
+$side-panel-font-family: 'open-sans-semibold', $font-family-sans-serif !default;
+$side-panel-font-weight: bold !default;
+$side-panel-font-size: 13px !default;
+
+$side-panel-link-color: $side-panel-font-color !default;
+
+
+// TASKS
+// -----------------------------------------------------
+$tasks-font-color: #a7b1c2 !default;
+$tasks-font-family: 'open-sans-semibold', $font-family-sans-serif !default;
+$tasks-font-weight: bold !default;
+$tasks-font-size: 13px !default;
+
+$tasks-hover-bg-color: #293846 !default;
+$tasks-border-color: lighten($tasks-hover-bg-color, 6%) !default;
+
+
+// HEADER
+// -----------------------------------------------------
+$header-bg-color: $body-bg-color !default;
+$header-font-color: #aaa !default;
+$header-font-family: 'open-sans-semibold', $font-family-sans-serif !default;
+$header-font-weight: bold !default;
+$header-font-size: 13px;
+
+
+// FOOTER
+// -----------------------------------------------------
+$footer-bg-color: #f9f9f9 !default;
+
+
+// BUTTONS
+// -----------------------------------------------------
+$button-bg-color: #ccc !default;
+$button-font-color: #f9f9f9 !default;
+$button-radius: 2px !default;
+
+$button-primary-bg-color: $primary-color !default;
+$button-primary-font-color: #f9f9f9 !default;
+
+$button-danger-bg-color: $alert-color !default;
+$button-danger-font-color: #f9f9f9 !default;

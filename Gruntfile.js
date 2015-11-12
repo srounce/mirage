@@ -27,9 +27,9 @@ module.exports = function(grunt) {
           '<%= paths.src %>/js/**/*.js'
         ],
         tasks: [
-          'newer:jscs:all',
-          'newer:jshint:all',
-          'concat:js:build'
+          'concat:build'
+          //'newer:jscs:all',
+          //'newer:jshint:all'
         ]
       },
 
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
       all: {
         src: [
           './Gruntfile.js',
-          '<%= paths.src %>/js/**/*.js'
+          '<%= paths.build %>/**/*.js'
         ]
       }
     },
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
       all: {
         src: [
           './Gruntfile.js',
-          '<%= paths.src %>/js/**/*.js'
+          '<%= paths.build %>/**/*.js'
         ]
       }
     },
@@ -86,15 +86,18 @@ module.exports = function(grunt) {
       options: {
         separator: ';'
       },
-
-      js: {
-        build: {
-          src: [
-
-          ],
-          dest: '<%= paths.build %>/mirage.js'
-        }
-      }
+      build: {
+        src: [
+          '<%= paths.src %>/js/build-progress.js'
+        ],
+        dest: '<%= paths.build %>/mirage.js'
+      },
+      dist: {
+        src: [
+          '<%= paths.src %>/js/build-progress.js'
+        ],
+        dest: '<%= paths.dist %>/mirage.js'
+      },
     },
 
     // compile our Sass files into CSS
@@ -102,6 +105,11 @@ module.exports = function(grunt) {
       build: {
         files: {
           '<%= paths.build %>/mirage.css': '<%= paths.src %>/sass/mirage.scss'
+        }
+      },
+      dist: {
+        files: {
+          '<%= paths.dist %>/mirage.css': '<%= paths.src %>/sass/mirage.scss'
         }
       },
       options: {
@@ -132,6 +140,14 @@ module.exports = function(grunt) {
             dest: '<%= paths.build %>'
           }
         ]
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= paths.dist %>',
+          src: '**/*.css',
+          dist: '<%= paths.dist %>'
+        }]
       }
     },
 
@@ -146,7 +162,59 @@ module.exports = function(grunt) {
             dest: '<%= paths.build %>/'
           }
         ]
+      },
+      dist: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= paths.src %>/images',
+            src: '**/*.{png,jpg,jpeg,gif}',
+            dest: '<%= paths.dist %>/'
+          }
+        ]
+      }
+    },
+
+    clean: {
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            '<%= paths.dist %>/**/*',
+            '!<%= paths.dist %>/.git{,*/}*'
+          ]
+        }]
+      }
+    },
+
+    cssmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= paths.dist %>',
+          src: '**/*.css',
+          dest: '<%= paths.dist %>',
+          ext: '.min.css'
+        }]
+      }
+    },
+
+    uglify: {
+      dist: {
+        files: {
+          '<%= paths.dist %>/mirage.min.js': '<%= paths.dist %>/mirage.js'
+        }
       }
     }
   });
+
+  grunt.registerTask('release', [
+    'clean:dist',
+    'sass:dist',
+    'postcss:dist',
+    'concat:dist',
+    'cssmin:dist',
+    'uglify:dist',
+    'imagemin:dist'
+  ]);
 };

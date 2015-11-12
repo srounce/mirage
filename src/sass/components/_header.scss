@@ -1,0 +1,59 @@
+// =====================================================
+// COMPONENTS.HEADER
+// =====================================================
+
+#header {
+  background-color: $header-bg-color;
+  margin-left: 250px;
+
+  &,
+  p,
+  table,
+  td,
+  th {
+    color: $header-font-color;
+    font-family: $header-font-family;
+    @include font-size($header-font-size);
+    font-weight: $header-font-weight;
+  }
+
+  .login {
+    color: inherit;
+    
+    a {
+      &,
+      &:link {
+        color: $header-font-color;
+      }
+
+      &:visited {
+        color: $header-font-color;
+      }
+    }
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .searchbox {
+    float: none;
+  }
+
+  #searchform {
+    a img {
+      display: none;
+    }
+  }
+
+  #search-box {
+    background-color: $header-bg-color;
+    background-image: none;
+    border: 0;
+    box-shadow: none;
+    font-family: $header-font-family;
+    font-size: $header-font-size;
+    font-weight: $header-font-weight;
+    padding-left: 0;
+  }
+}

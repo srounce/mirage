@@ -1,0 +1,18 @@
+// =====================================================
+// BASE.TYPE
+// =====================================================
+
+body,
+p,
+table,
+form,
+td,
+th {
+  font-family: $body-font-family;
+}
+
+pre {
+  font-family: $font-family-monospace;
+  @include font-size(16px, false);
+  line-height: 1.35;
+}

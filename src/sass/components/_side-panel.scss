@@ -1,0 +1,109 @@
+// =====================================================
+// COMPONENTS.SIDE-PANEL
+// =====================================================
+
+#side-panel {
+  background-color: $side-panel-bg-color;
+  background-image: url('logo.png');
+  background-position: 50% 2rem;
+  background-repeat: no-repeat;
+  bottom: 0;
+  color: $side-panel-font-color;
+  font-family: $side-panel-font-family;
+  @include font-size($side-panel-font-size);
+  font-weight: $side-panel-font-weight;
+  left: 0;
+  overflow: auto;
+  padding: 0;
+  padding-top: 150px;
+  position: fixed;
+  top: 0;
+  width: 250px;
+
+  p,
+  table,
+  form,
+  td,
+  th {
+    color: $side-panel-font-color;
+    font-family: $side-panel-font-family;
+    @include font-size($side-panel-font-size);
+    font-weight: $side-panel-font-weight;
+  }
+
+  a,
+  a:link {
+    color: $side-panel-link-color;
+    text-decoration: none;
+  }
+
+  .pane-frame {
+    border: 0;
+    border-top: 1px solid $tasks-border-color;
+    
+    &:hover,
+    &.mouseover {
+      border: 0;
+      border-top: 1px solid $tasks-border-color;
+    }
+  }
+
+  .pane-header,
+  .pane-footer {
+    background-color: transparent;
+    border: 0;
+    color: $side-panel-font-color;
+    font-family: $side-panel-font-family;
+    @include font-size($side-panel-font-size);
+    font-weight: $side-panel-font-weight;
+    padding: 14px 1rem;
+    
+    .collapse {
+      font-family: 'fontawesomeregular';
+
+      &:before {
+        content: "\f104";
+      }
+
+      &[title='collapse']:before {
+        content: "\f107";
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .expanded {
+    background-color: $tasks-hover-bg-color;
+
+    .pane-content {
+      padding: 0.5rem;
+    }
+  }
+
+  .pane-content {
+    &,
+    p,
+    table,
+    td,
+    th {
+      font-family: $body-font-family;
+      font-weight: normal;
+    }
+    
+    .cell {
+      font-family: inherit;
+      font-weight: inherit;
+      margin-left: 1rem;
+    }
+  }
+
+  table.stripped {
+    
+    tr:nth-child(even) {
+      background: lighten($side-panel-bg-color, 5%);
+    }
+  }
+}

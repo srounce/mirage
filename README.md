@@ -1,13 +1,16 @@
 # Mirage
 
+**This is very much a work in progress! There is still a lot of work to be done in terms of tidying up the CSS and making the theme more configurable**
+
 A modern feeling theme for Jenkins CI server.
 
 ## Installation in Jenkins
 
 If you want everybody who accesses your Jenkins server to see this theme you will need access to install plugins and configure the system.
 
-1. Install [Jenkink Simplete Theme Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin)
-2. Upload the `dist/mirage.min.css` and `dist/mirage.min.js` files to a location that is acceesible over HTTP to all your visitors (the `userContent` directory of your Jenkins install is a simple location for this)
+1. Install [Jenkins Simple Theme Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin)
+2. Install [jQuery Plugin](https://wiki.jenkins-ci.org/display/JENKINS/jQuery+Plugin)
+2. Upload the `dist/mirage.min.css`, `dist/mirage.min.js` and `logo.png` files to a location that is acceesible over HTTP to all your visitors (the `userContent` directory of your Jenkins install is a simple location for this)
 3. In Jenkins, click "Manage Jenkins", then "Configure System", then specify the CSS and Javascript URL's for this theme in the Theme section. If you are hosting this theme in `userContent` and using Jenkins default settings, you would enter the following URLs
 
 ```

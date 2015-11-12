@@ -1,0 +1,64 @@
+// =====================================================
+// COMPONENTS.BUTTONS
+// =====================================================
+
+#jenkins {
+
+  .yui-button {
+    button {
+      background-color: $button-bg-color;
+      border: 0;
+      border-radius: $button-radius;
+      color: $button-font-color;
+
+      &:hover {
+        background-color: $button-bg-color;
+        border: 0;
+      }
+    }
+
+    &.primary {
+
+      button {
+        border-radius: $button-radius;
+        background-color: $button-primary-bg-color;
+        border: 0;
+        color: $button-primary-font-color;
+
+        &:hover {
+          background-color: $button-primary-bg-color;
+          border: 0;
+        }
+      }
+    }
+
+    &.danger {
+
+      button {
+        border-radius: $button-radius;
+        background-color: $button-danger-bg-color;
+        border: 0;
+        color: $button-danger-font-color;
+
+        &:hover {
+          background-color: $button-danger-bg-color;
+          border: 0;
+        }
+      }
+
+      &.yui-push-button-hover {
+        button {
+          border-radius: $button-radius;
+          background-color: $button-danger-bg-color;
+          border: 0;
+          color: $button-danger-font-color;
+
+          &:hover {
+            background-color: $button-danger-bg-color;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -38,7 +38,7 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
    config.vm.hostname = 'jenkins.mirage.dev'
    config.vm.network :private_network, ip: '192.168.111.222'
 
-   config.vm.synced_folder './build', '/var/lib/jenkins/userContent', :create => true, :type => 'nfs', mount_options: ['actimeo=1']
+   config.vm.synced_folder './dist', '/var/lib/jenkins/userContent', :create => true, :type => 'nfs', mount_options: ['actimeo=1']
 
    config.vm.provision :trigger do |trigger|
       trigger.fire do

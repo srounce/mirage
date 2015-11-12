@@ -1,0 +1,100 @@
+// =====================================================
+// COMPONENTS.BUILD-HISTORY
+// =====================================================
+
+#buildHistory {
+
+  .build-search-row {
+    background-color: transparent;
+
+    td {
+      padding: 0.5rem 0;
+    }
+
+    .clear {
+      padding: 0.5rem 0;
+    }
+
+    input {
+      background-color: $tasks-hover-bg-color;
+      border: 0;
+      box-shadow: none;
+      color: $side-panel-font-color;
+      font-family: $side-panel-font-family;
+      @include font-size($side-panel-font-size);
+      font-weight: $side-panel-font-weight;
+      padding: 0.5rem;
+
+      &:focus,
+      &:active {
+        box-shadow: none;
+        outline-color: transparent;
+        outline-style: none;
+      }
+    }
+
+    ::-webkit-input-placeholder {
+       padding: 0.2rem;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       padding: 0.2rem;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       padding: 0.2rem; 
+    }
+
+    :-ms-input-placeholder {  
+       padding: 0.2rem; 
+    }
+  }
+
+  .build-row {
+    td {
+      display: none;
+
+      &.build-row-cell {
+        display: table-cell;
+      }
+    }
+
+    &.overflow-checked {
+      padding: 0.5rem 0.25rem;
+    }
+  }
+
+  a[class*="build-rss"] {
+    font-family: $body-font-family;
+    font-weight: normal;
+  }
+
+  .build-rss-all-icon,
+  .build-rss-failed-icon {
+    font-family: 'fontawesomeregular' !important;
+
+    &:before {
+      content: "\f09e";
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  .build-rss-failed-icon {
+    margin-left: 0.5rem;
+  }
+}
+
+#buildHistoryPageNav {
+  border: 0;
+  left: auto;
+  position: relative;
+  top: 4rem;
+  visibility: visible;
+
+  .nav {
+    display: inline-block;
+  }
+}
