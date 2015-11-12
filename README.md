@@ -4,6 +4,14 @@
 
 A modern feeling theme for Jenkins CI server.
 
+### Screenshots
+
+<img src="http://unfinisheddev.com/assets/mirage-dashbord.jpg" alt="Jenkins Dashboard" />
+
+<img src="http://unfinisheddev.com/assets/mirage-console-output.jpg" alt="Jenkins Console Output" />
+
+<img src="http://unfinisheddev.com/assets/mirage-configure.jpg" alt="Jenkins Configuration Screen" />
+
 ## Installation in Jenkins
 
 If you want everybody who accesses your Jenkins server to see this theme you will need access to install plugins and configure the system.
