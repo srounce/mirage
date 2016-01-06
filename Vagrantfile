@@ -8,8 +8,8 @@ end
 Vagrant.configure(VAGRANT_API_VERSION) do |config|
    config.vm.box = 'centos/7'
 
-   # Setting the `insert_key` to false prevents vagrant from generating a private key. 
-   # This allows us to point our development Ansible inventory at the common, insecure key. 
+   # Setting the `insert_key` to false prevents vagrant from generating a private key.
+   # This allows us to point our development Ansible inventory at the common, insecure key.
    # This isn't really an issue as this VM is for development only
    config.ssh.insert_key = false
 
@@ -38,7 +38,7 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
    config.vm.hostname = 'jenkins.mirage.dev'
    config.vm.network :private_network, ip: '192.168.111.222'
 
-   config.vm.synced_folder './dist', '/var/lib/jenkins/userContent', :create => true, :type => 'nfs', mount_options: ['actimeo=1']
+   config.vm.synced_folder './build', '/var/lib/jenkins/userContent', :create => true, :type => 'nfs', mount_options: ['actimeo=1']
 
    config.vm.provision :trigger do |trigger|
       trigger.fire do

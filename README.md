@@ -34,6 +34,17 @@ If you want to modify the theme or create a pull request then you'll need to ens
 * Grunt
 * Vagrant
 * VirtualBox
+* Ansible
+
+### Vagrant Environment
+
+The Vagrantfile will create a CentOS 7 virtual machine and install Jenkins, the simple theme plugin and jquery plugin.
+
+It will also syncronise the `./build` directory in the repository to the `/var/lib/jenkins/userContent` directory in the virutal machine, allowing you to easily add the theme to the Jenkins and test updates to the styles and scripts.
+
+#### Ansible
+
+The Vagrantfile will require [Ansible to be installed](http://docs.ansible.com/ansible/intro_installation.html) and available in the path for the provisioning to run.
 
 ## This is *NOT* an Attack on Jenkins
 
