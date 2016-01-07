@@ -1,0 +1,6 @@
+# Browsers we'll add CSS prefixes for
+#
+# @see https://github.com/ai/browserslist#queries
+
+> 9%
+Last 2 versions
