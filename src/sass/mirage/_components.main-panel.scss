@@ -1,0 +1,14 @@
+/**
+ * Styles that affect the `<div id="main-panel">` element
+ */
+
+#main-panel {
+    background-color: $main-panel-background-color;
+    border-top: $main-panel-border-top;
+    color: $main-panel-text-color;
+    margin-bottom: $main-panel-bottom-margin;
+    margin-left: $side-panel-width + $main-panel-side-margin;
+    margin-right: $main-panel-side-margin;
+    margin-top:  $main-panel-top-margin;
+    padding: $main-panel-padding;
+}

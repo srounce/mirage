@@ -1,0 +1,515 @@
+/**
+ * Set our default values for the settings we rely on existing.
+ *
+ * Any setting here *should* be defined as `!default` so that it can be
+ * overridden in the users `_settings.scss` file.
+ *
+ * In most cases you shouldn't modify these settings to change the look & feel
+ * of the theme, instead override the value in the `_settings.scss` file.
+ */
+
+// TABLE OF CONTENTS
+// -----------------------------------------------------
+//
+// GLOBAL
+// TYPOGRAPHY
+// FORMS
+// BUTTONS
+// HEADER
+// MAIN PANEL
+// SIDE PANEL
+// AUTO CALCULATED
+
+
+// GLOBAL
+// -----------------------------------------------------
+
+/**
+ * We use this when calculating the `rem` size for a `px` sized value
+ *
+ * @type String
+ */
+$base-font-size: 16px !default;
+
+/**
+ * The base `line-height` to apply to the document.
+ * This value is also used when calculating the `line-height` in our `font-size`
+ * mixin
+ *
+ * @type Number
+ */
+$base-line-height: 24px !default;
+
+/**
+ * Primary color for interactive components, such as links and buttons
+ *
+ * @type Color
+ */
+$primary-color: #1ab394 !default;
+
+/**
+ * Secondary color for components. Could either complement or contrast
+ * `primary-color`.
+ *
+ * @type Color
+ */
+$secondary-color: #2f4050 !default;
+
+/**
+ * Color to indicate a positive status or action
+ *
+ * @type Color
+ */
+$success-color: #43ac6a !default;
+
+/**
+ * Color to indicate a caution status or action
+ *
+ * @type Color
+ */
+$warning-color: #f08a24 !default;
+
+/**
+ * Color to indicate a negative status or action
+ *
+ * @type Color
+ */
+$alert-color: #f04124 !default;
+
+/**
+ * Color to indicate an informational message
+ *
+ * @type Color
+ */
+$info-color: #a0d3e8 !default;
+
+/**
+ * Default text color for components
+ *
+ * @type Color
+ */
+$base-text-color: #333;
+
+/**
+ * Background color of the document
+ *
+ * @type Color
+ */
+$base-background-color: #ececec;
+
+/**
+ * Default font stack for components
+ *
+ * @type List
+ */
+$base-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+
+/**
+ * Font stack for fixed width text
+ *
+ * @type List
+ */
+$fixed-width-font-family: Inconsolata, "Source Code Pro", menlo, monaco, Consolas, "Liberation Mono", Courier, monospace !default;
+
+
+// TYPOGRAPHY
+// -----------------------------------------------------
+
+/**
+ * Font family of headings
+ *
+ * @type List
+ */
+$heading-font-family: $base-font-family !default;
+
+/**
+ * Font weight of headings
+ *
+ * @type Keyword | Number
+ */
+$heading-font-weight: normal !default;
+
+/**
+ * Font size of `<h1>` elements
+ *
+ * @type Number
+ */
+$heading-one-font-size: 32px !default;
+
+/**
+ * Font size of `<h2>` elements
+ *
+ * @type Number
+ */
+$heading-two-font-size: 28px !default;
+
+/**
+ * Font size of `<h3>` elements
+ *
+ * @type Number
+ */
+$heading-three-font-size: 24px !default;
+
+/**
+ * Font size of `<h4>` elements
+ *
+ * @type Number
+ */
+$heading-four-font-size: 20px !default;
+
+/**
+ * Font size of `<h5>` elements
+ *
+ * @type Number
+ */
+$heading-five-font-size: 16px !default;
+
+/**
+ * Font size of `<h6>` elements
+ *
+ * @type Number
+ */
+$heading-six-font-size: 13px !default;
+
+/**
+ * Font size of paragraph elements
+ *
+ * @type Number
+ */
+$paragraph-font-size: 14px !default;
+
+/**
+ * Font family for paragraph elements
+ *
+ * @type List | Keyword
+ */
+$paragraph-font-family: $base-font-family !default;
+
+/**
+ * Font weight of paragraph elements
+ *
+ * @type Keyword | Number
+ */
+$paragraph-font-weight: normal !default;
+
+
+// FORMS
+// -----------------------------------------------------
+
+/**
+ * Font family of input elements
+ *
+ * @type List | Keyword
+ */
+$form-input-color: $base-text-color !default;
+
+/**
+ * Text size of input elements
+ *
+ * @type Number
+ */
+$form-input-text-size: 14px !default;
+
+/**
+ * Background color of input elements
+ *
+ * @type Color
+ */
+$form-input-background-color: #f9f9f9 !default;
+
+/**
+ * Background color of input elements when focused
+ *
+ * @type Color
+ */
+$form-input-background-focus: $form-input-background-color !default;
+
+/**
+ * Background color of input elements when focused
+ *
+ * @type Color
+ */
+$form-input-background-disabled: #ddd !default;
+
+/**
+ * Border around text inputs
+ *
+ * @type Border
+ */
+$form-input-border: 1px solid #aaa !default;
+
+/**
+ * Border around focused text inputs.
+ *
+ * @type Color
+ */
+$form-input-border-focus: 1px solid $primary-color !default;
+
+/**
+ * Box shadow inside text inputs when not focused.
+ *
+ * @type Shadow
+ */
+$form-input-shadow: inset 0 1px 2px rgba(0,0,0, 0.1) !default;
+
+/**
+ * Box shadow outside text inputs when focused.
+ *
+ * @type Shadow
+ */
+$form-input-shadow-focus: 0 0 2px $primary-color !default;
+
+/**
+ * Cursor to use when hovering over a disabled text input.
+ *
+ * @type Cursor
+ */
+$form-input-cursor-disabled: default !default;
+
+/**
+ * Properties to transition on text inputs.
+ *
+ * @type Transition
+ */
+$form-input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out !default;
+
+/**
+ * Radius for text inputs.
+ *
+ * @type Border
+ */
+$form-input-radius: 3px !default;
+
+/**
+ * Font family of form elements
+ *
+ * @type List | Keyword
+ */
+$form-input-font-family: inherit !default;
+
+
+// BUTTONS
+// -----------------------------------------------------
+
+/**
+ * Default color of button elements
+ *
+ * @type Color
+ */
+$button-background-color: #ccc !default;
+
+/**
+ * Default button text color
+ *
+ * @type Color
+ */
+$button-text-color: #f9f9f9 !default;
+
+/**
+ * Border radius of buttons
+ *
+ * @type Number
+ */
+$button-radius: 3px !default;
+
+/**
+ * Background color or primary buttons
+ *
+ * @type Color
+ */
+$button-primary-background-color: $primary-color !default;
+
+/**
+ * Text color of primary buttons
+ */
+$button-primary-text-color: #f9f9f9 !default;
+
+/**
+ * Background color of alert / danger buttons
+ *
+ * @type Color
+ */
+$button-alert-background-color: $alert-color !default;
+
+/**
+ * Text color of alert / danger buttons
+ *
+ * @type Color
+ */
+$button-alert-text-color: #f9f9f9 !default;
+
+
+// HEADER
+// -----------------------------------------------------
+// These settings apply to the `<div id="header">` element
+
+/**
+ * Background color of the #header element
+ *
+ * @type Color
+ */
+$header-background-color: $base-background-color !default;
+
+/**
+ * Text color of the #header element
+ *
+ * @type Color
+ */
+$header-text-color: #aaa !default;
+
+/**
+ * Font size of the #header element
+ *
+ * @type Number
+ */
+$header-font-size: 14px !default;
+
+/**
+ * Font weight of the #header element
+ *
+ * @type Keyword | Number
+ */
+$header-font-weight: bold !default;
+
+
+// MAIN PANEL
+// -----------------------------------------------------
+// These settings apply to the `<div id="main-panel">` element
+
+/**
+ * Background color of the main panel
+ *
+ * @type Color
+ */
+$main-panel-background-color: #f9f9f9 !default;
+
+/**
+ * Text color of the main panel
+ *
+ * @type Color
+ */
+$main-panel-text-color: $base-text-color;
+
+/**
+ * Border color of the main panel
+ *
+ * @type Color
+ */
+$main-panel-border-top: 3px solid #ccc !default;
+
+/**
+ * Top margin of the main panel
+ *
+ * @type Number
+ */
+ $main-panel-top-margin: 1rem !default;
+
+/**
+ * Bottom margin of the main panel
+ *
+ * @type Numebr
+ */
+$main-panel-bottom-margin: 3.5rem !default;
+
+/**
+ * Side margins of the main panel
+ *
+ * @type Number
+ */
+$main-panel-side-margin: 1rem !default;
+
+/**
+ * Amount of padding to apply to the main padding
+ *
+ * @type Number
+ */
+$main-panel-padding: 1rem !default;
+
+
+// SIDE PANEL
+// -----------------------------------------------------
+// These settings apply to the `<div id="side-panel">` element
+
+/**
+ * Background color of the side panel
+ *
+ * @type Color
+ */
+$side-panel-background-color: $secondary-color !default;
+
+/**
+ * Text color of the side panel
+ *
+ * @type Color
+ */
+$side-panel-text-color: #a7b1c2 !default;
+
+/**
+ * Font weight of the side panel
+ *
+ * @type Keyword | Number
+ */
+$side-panel-font-weight: bold !default;
+
+/**
+ * Font size of the side panel
+ * We'll calculate this to a `rem` size automatically
+ *
+ * @type Number
+ */
+$side-panel-font-size: 13px !default;
+
+/**
+ * Text color of links in the side panel
+ *
+ * @type Color
+ */
+$side-panel-link-color: $side-panel-text-color !default;
+
+/**
+ * The width of the side panel
+ *
+ * @type Number
+ */
+$side-panel-width: 15.625rem !default;
+
+
+// TASKS
+// -----------------------------------------------------
+
+
+// BREADCRUMBS
+// -----------------------------------------------------
+
+/**
+ * The background color of the breadcrumb bar
+ *
+ * @type Color
+ */
+$breadcrumb-background-color: $main-panel-background-color !default;
+
+/**
+ * The border of the breadcrumb bar
+ *
+ * @type Border
+ */
+$breadcrumb-border: 1px solid #ccc !default;
+
+/**
+ * Padding of the breadcrumb bar
+ *
+ * @type Number
+ */
+$breadcrumb-padding: 0.5rem !default;
+
+// AUTO CALCULATED
+// -----------------------------------------------------
+// These values are calculated from various other variables. You should not need
+// to modify them or re-assign them
+
+$base-spacing-unit:        $base-line-height;
+$base-spacing-unit--tiny:  round($base-spacing-unit / 4);
+$base-spacing-unit--small: round($base-spacing-unit / 2);
+$base-spacing-unit--large: round($base-spacing-unit * 2);
+$base-spacing-unit--huge:  round($base-spacing-unit * 4);
+

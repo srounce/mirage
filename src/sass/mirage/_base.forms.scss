@@ -1,0 +1,39 @@
+/**
+ * Style the form elements
+ */
+
+input[type="text"],
+select,
+textarea {
+    background-color: $form-input-background-color;
+    border: $form-input-border;
+    box-shadow: $form-input-shadow;
+    font-family: $form-input-font-family;
+    @include font-size($form-input-text-size);
+    transition: $form-input-transition;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="text"],
+textarea {
+    &:focus {
+        background-color: $form-input-background-focus;
+        border: $form-input-border-focus;
+        box-shadow: $form-input-shadow-focus
+    }
+
+    &:disabled,
+    &[readonly] {
+        background-color: $form-input-background-disabled;
+        cursor: $form-input-cursor-disabled;
+    }
+}
+
+textarea {
+    max-width: 100%;
+
+    &[rows] {
+        height: auto;
+    }
+}

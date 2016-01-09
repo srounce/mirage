@@ -1,9 +1,9 @@
-// =====================================================
-// COMPONENTS.HEADER
-// =====================================================
+/**
+ * Styles that affect the `<div id="header">` element
+ */
 
 #header {
-  background-color: $header-bg-color;
+  background-color: $header-background-color;
   margin-left: 250px;
 
   &,
@@ -11,23 +11,22 @@
   table,
   td,
   th {
-    color: $header-font-color;
-    font-family: $header-font-family;
+    color: $header-text-color;
     @include font-size($header-font-size);
     font-weight: $header-font-weight;
   }
 
   .login {
     color: inherit;
-    
+
     a {
       &,
       &:link {
-        color: $header-font-color;
+        color: $header-text-color;
       }
 
       &:visited {
-        color: $header-font-color;
+        color: $header-text-color;
       }
     }
   }
@@ -47,11 +46,10 @@
   }
 
   #search-box {
-    background-color: $header-bg-color;
+    background-color: $header-background-color;
     background-image: none;
     border: 0;
     box-shadow: none;
-    font-family: $header-font-family;
     font-size: $header-font-size;
     font-weight: $header-font-weight;
     padding-left: 0;

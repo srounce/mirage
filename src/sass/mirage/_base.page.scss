@@ -1,0 +1,22 @@
+/**
+ * Styles very basic, global, page-level aspects such at the themes base
+ * base `font-size` and `line-height`
+ */
+
+html {
+    background-color: $base-background-color;
+    color: $base-text-color;
+    font-size: ($base-font-size / 16px) * 1em;
+    line-height: $base-line-height / $base-font-size;
+    overflow-y: scroll;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+ }
+
+body {
+  background-color: $body-bg-color;
+  font-family: $base-font-family;
+}

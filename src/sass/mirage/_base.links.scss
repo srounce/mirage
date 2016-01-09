@@ -1,0 +1,19 @@
+/**
+ * Styles the generic link elements
+ */
+
+a {
+  &,
+  &:link {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $primary-color;
+  }
+
+  &:hover {
+    color: $secondary-color;
+  }
+}

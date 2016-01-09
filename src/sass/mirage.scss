@@ -1,27 +1,32 @@
 
 @import 'settings';
 
+@import 'mirage/generic.defaults';
 @import 'base/defaults';
-@import 'mixins/font-size';
+@import 'mirage/tools.mixins';
 
 
-@import 'base/shared';
-@import 'base/type';
-@import 'base/forms';
+@import 'mirage/generic.shared';
+@import 'mirage/base.page';
+@import 'mirage/base.type';
+@import 'mirage/base.links';
+@import 'mirage/base.forms';
+
+@import 'mirage/objects.buttons';
 
 
-@import 'components/main-panel';
-@import 'components/side-panel';
-@import 'components/tasks';
-@import 'components/build-queue';
-@import 'components/header';
-@import 'components/breadcrumbs';
-@import 'components/footer';
-@import 'components/icons';
-@import 'components/buttons';
-@import 'components/notifications';
-@import 'components/build-progress';
-@import 'components/build-history';
+@import 'mirage/components.main-panel';
+@import 'mirage/components.side-panel';
+@import 'mirage/components.header';
+@import 'mirage/components.breadcrumbs';
+//@import 'components/tasks';
+//@import 'components/build-queue';
+//@import 'components/footer';
+//@import 'components/icons';
+//@import 'components/notifications';
+//@import 'components/build-progress';
+//@import 'components/build-history';
+@import 'mirage/components.code-mirror';
 
 
 .top-sticker.noedge {

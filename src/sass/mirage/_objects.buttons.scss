@@ -1,0 +1,68 @@
+/**
+ * Button elements
+ */
+
+// For some crazy reason some of the button styling in Jenkins includes a top
+// level ID selector. We either need to match the specifity or use the
+// `!important` paramter, which will give us less opportunity for further
+// overrides
+#jenkins {
+
+  .yui-button {
+    button {
+      background-color: $button-background-color;
+      border: 0;
+      border-radius: $button-radius;
+      color: $button-text-color;
+
+      &:hover {
+        background-color: $button-background-color;
+        border: 0;
+      }
+    }
+
+    &.primary {
+
+      button {
+        border-radius: $button-radius;
+        background-color: $button-primary-background-color;
+        border: 0;
+        color: $button-primary-text-color;
+
+        &:hover {
+          background-color: $button-primary-background-color;
+          border: 0;
+        }
+      }
+    }
+
+    &.danger {
+
+      button {
+        border-radius: $button-radius;
+        background-color: $button-alert-background-color;
+        border: 0;
+        color: $button-alert-text-color;
+
+        &:hover {
+          background-color: $button-alert-background-color;
+          border: 0;
+        }
+      }
+
+      &.yui-push-button-hover {
+        button {
+          border-radius: $button-radius;
+          background-color: $button-alert-background-color;
+          border: 0;
+          color: $button-alert-background-color;
+
+          &:hover {
+            background-color: $button-alert-background-color;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}

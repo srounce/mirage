@@ -34,21 +34,6 @@ $body-font-family: $font-family-sans-serif !default;
 $body-bg-color: #ececec !default;
 
 
-// MAIN-PANEL
-// -----------------------------------------------------
-$main-panel-bg-color: #f9f9f9 !default;
-$main-panel-border-color: #ccc !default;
-
-
-// SIDE-PANEL
-// -----------------------------------------------------
-$side-panel-bg-color: $secondary-color !default;
-$side-panel-font-color: #a7b1c2 !default;
-$side-panel-font-family: 'open-sans-semibold', $font-family-sans-serif !default;
-$side-panel-font-weight: bold !default;
-$side-panel-font-size: 13px !default;
-
-$side-panel-link-color: $side-panel-font-color !default;
 
 
 // TASKS
@@ -62,28 +47,9 @@ $tasks-hover-bg-color: #293846 !default;
 $tasks-border-color: lighten($tasks-hover-bg-color, 6%) !default;
 
 
-// HEADER
-// -----------------------------------------------------
-$header-bg-color: $body-bg-color !default;
-$header-font-color: #aaa !default;
-$header-font-family: 'open-sans-semibold', $font-family-sans-serif !default;
-$header-font-weight: bold !default;
-$header-font-size: 13px;
 
 
 // FOOTER
 // -----------------------------------------------------
 $footer-bg-color: #f9f9f9 !default;
 
-
-// BUTTONS
-// -----------------------------------------------------
-$button-bg-color: #ccc !default;
-$button-font-color: #f9f9f9 !default;
-$button-radius: 2px !default;
-
-$button-primary-bg-color: $primary-color !default;
-$button-primary-font-color: #f9f9f9 !default;
-
-$button-danger-bg-color: $alert-color !default;
-$button-danger-font-color: #f9f9f9 !default;

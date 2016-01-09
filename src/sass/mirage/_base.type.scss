@@ -1,0 +1,48 @@
+/**
+ * Styles unclassed typographical elements
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+}
+
+h1 {
+    @include font-size($heading-one-font-size);
+}
+
+h2 {
+    @include font-size($heading-two-font-size);
+}
+
+h3 {
+    @include font-size($heading-three-font-size);
+}
+
+h4 {
+    @include font-size($heading-four-font-size);
+}
+
+h5 {
+    @include font-size($heading-five-font-size);
+}
+
+h6 {
+    @include font-size($heading-six-font-size);
+}
+
+// Because Jenkins original stylesheet styles each of these elements
+// individually, we need to overwrite them all to a consistent value
+p,
+table, td, th,
+form {
+    font-family: $paragraph-font-family;
+    @include font-size($paragraph-font-size);
+    font-weight: $paragraph-font-weight;
+}
+
+pre {
+    font-family: $fixed-width-font-family;
+    @include font-size(16px, false);
+    line-height: 1.35;
+}

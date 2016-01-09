@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   require("time-grunt")(grunt);
 
   require('load-grunt-config')(grunt, {
-    configPath: path.join(process.cwd(), 'grunt-tasks'),
+    configPath: path.join(__dirname, 'grunt-tasks'),
     jitGrunt: {}
   });
 };

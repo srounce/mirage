@@ -1,15 +1,14 @@
-// =====================================================
-// COMPONENTS.SIDE-PANEL
-// =====================================================
+/**
+ * Styles that affect the `<div id="side-panel">` element
+ */
 
 #side-panel {
-  background-color: $side-panel-bg-color;
+  background-color: $side-panel-background-color;
   background-image: url('logo.png');
   background-position: 50% 2rem;
   background-repeat: no-repeat;
   bottom: 0;
-  color: $side-panel-font-color;
-  font-family: $side-panel-font-family;
+  color: $side-panel-text-color;
   @include font-size($side-panel-font-size);
   font-weight: $side-panel-font-weight;
   left: 0;
@@ -18,15 +17,14 @@
   padding-top: 150px;
   position: fixed;
   top: 0;
-  width: 250px;
+  width: $side-panel-width;
 
   p,
   table,
   form,
   td,
   th {
-    color: $side-panel-font-color;
-    font-family: $side-panel-font-family;
+    color: $side-panel-text-color;
     @include font-size($side-panel-font-size);
     font-weight: $side-panel-font-weight;
   }
@@ -40,7 +38,7 @@
   .pane-frame {
     border: 0;
     border-top: 1px solid $tasks-border-color;
-    
+
     &:hover,
     &.mouseover {
       border: 0;
@@ -52,12 +50,11 @@
   .pane-footer {
     background-color: transparent;
     border: 0;
-    color: $side-panel-font-color;
-    font-family: $side-panel-font-family;
+    color: $side-panel-text-color;
     @include font-size($side-panel-font-size);
     font-weight: $side-panel-font-weight;
     padding: 14px 1rem;
-    
+
     .collapse {
       font-family: 'fontawesomeregular';
 
@@ -89,10 +86,10 @@
     table,
     td,
     th {
-      font-family: $body-font-family;
+      font-family: $base-font-family;
       font-weight: normal;
     }
-    
+
     .cell {
       font-family: inherit;
       font-weight: inherit;
@@ -101,9 +98,9 @@
   }
 
   table.stripped {
-    
+
     tr:nth-child(even) {
-      background: lighten($side-panel-bg-color, 5%);
+      background: lighten($side-panel-background-color, 5%);
     }
   }
 }

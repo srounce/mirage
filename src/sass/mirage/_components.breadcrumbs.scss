@@ -1,0 +1,24 @@
+/**
+ * Styles the affect the `<div id="breadcrumbBar">` element
+ */
+
+#breadcrumbBar {
+  background-color: $breadcrumb-background-color !important;
+  border: $breadcrumb-border;
+  padding: $breadcrumb-padding;
+  text-transform: uppercase;
+
+  .top-sticker-inner {
+    background-color: $breadcrumb-background-color;
+
+    ul {
+      border: 0;
+    }
+  }
+}
+
+#right-top-nav {
+  position: fixed;
+  right: 1em;
+  z-index: 1000;
+}
