@@ -18,6 +18,9 @@
 // HEADER
 // MAIN PANEL
 // SIDE PANEL
+// TASKS
+// BREADCRUMBS
+// FOOTER
 // AUTO CALCULATED
 
 
@@ -45,7 +48,7 @@ $base-line-height: 24px !default;
  *
  * @type Color
  */
-$primary-color: #1ab394 !default;
+$primary-color: #008061 !default;
 
 /**
  * Secondary color for components. Could either complement or contrast
@@ -477,6 +480,42 @@ $side-panel-width: 15.625rem !default;
 // TASKS
 // -----------------------------------------------------
 
+/**
+ * Text color of elements in the tasks component
+ *
+ * @type Color
+ */
+$tasks-text-color: #a7b1c2 !default;
+
+/**
+ * The font weight of elements in the tasks component
+ *
+ * @type Keyword | Number
+ */
+$tasks-font-weight: bold !default;
+
+/**
+ * The font size of elements in the tasks component
+ *
+ * @type Number
+ */
+$tasks-font-size: 13px !default;
+
+
+/**
+ * The background color of elements in the task component on hover
+ *
+ * @type Color
+ */
+$tasks-hover-background-color: #293846 !default;
+
+/**
+ * The color of the top border that separates the tasks
+ *
+ * @type Color
+ */
+$tasks-border-color: lighten($tasks-hover-background-color, 6%) !default;
+
 
 // BREADCRUMBS
 // -----------------------------------------------------
@@ -501,6 +540,24 @@ $breadcrumb-border: 1px solid #ccc !default;
  * @type Number
  */
 $breadcrumb-padding: 0.5rem !default;
+
+
+// BUILD QUEUE
+// -----------------------------------------------------
+
+/**
+ * The margin of the `buildQueue` component
+ *
+ * @type Margin
+ */
+$build-queue-margin: 0 0 !default;
+
+
+// BUILD QUEUE
+// -----------------------------------------------------
+
+$footer-background-color: $main-panel-background-color !default;
+
 
 // AUTO CALCULATED
 // -----------------------------------------------------

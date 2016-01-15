@@ -19,13 +19,13 @@
 @import 'mirage/components.side-panel';
 @import 'mirage/components.header';
 @import 'mirage/components.breadcrumbs';
-//@import 'components/tasks';
-//@import 'components/build-queue';
-//@import 'components/footer';
-//@import 'components/icons';
-//@import 'components/notifications';
-//@import 'components/build-progress';
-//@import 'components/build-history';
+@import 'mirage/components.tasks';
+@import 'mirage/components.build-queue';
+@import 'mirage/components.build-progress';
+@import 'mirage/components.footer';
+@import 'mirage/components.icons';
+@import 'mirage/components.notifications';
+@import 'mirage/components.build-history';
 @import 'mirage/components.code-mirror';
 
 

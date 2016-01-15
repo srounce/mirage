@@ -1,14 +1,13 @@
-// =====================================================
-// COMPONENTS.TASKS
-// =====================================================
+/**
+ * Style that affect the `<div id="tasks">` element
+ */
 
 #tasks {
   margin-bottom: 0;
 
   .task {
     border-top: 1px solid $tasks-border-color;
-    color: $tasks-font-color;
-    font-family: $tasks-font-family;
+    color: $tasks-text-color;
     @include font-size($tasks-font-size, false);
     font-weight: $tasks-font-weight;
     line-height: 0;
@@ -22,7 +21,7 @@
     }
 
     &:hover {
-      background-color: $tasks-hover-bg-color;
+      background-color: $tasks-hover-background-color;
     }
   }
 
