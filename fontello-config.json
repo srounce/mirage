@@ -1,0 +1,28 @@
+{
+  "name": "mirage-icons",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "3e617d8049807e128c80d0344ba09e37",
+      "css": "rss",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "7e89c12b577c31bc91bfb61bb597f01f",
+      "css": "down-dir",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "9aeaf29161eb005a308bbd624d6e066a",
+      "css": "left-dir",
+      "code": 59394,
+      "src": "entypo"
+    }
+  ]
+}

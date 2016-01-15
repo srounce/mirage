@@ -91,21 +91,30 @@ $info-color: #a0d3e8 !default;
  *
  * @type Color
  */
-$base-text-color: #333;
+$base-text-color: #333 !default;
 
 /**
  * Background color of the document
  *
  * @type Color
  */
-$base-background-color: #ececec;
+$base-background-color: #ececec !default;
+
+/**
+ * Should we include the open-sans fonts?
+ * If true a font-face rule will be added for `open-sans` and `open-sans-semibold`
+ * which you can then use in your font stacks
+ *
+ * @type Boolean
+ */
+$include-open-sans-fonts: true !default;
 
 /**
  * Default font stack for components
  *
  * @type List
  */
-$base-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+$base-font-family: 'open-sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 
 /**
  * Font stack for fixed width text
@@ -123,7 +132,7 @@ $fixed-width-font-family: Inconsolata, "Source Code Pro", menlo, monaco, Consola
  *
  * @type List
  */
-$heading-font-family: $base-font-family !default;
+$heading-font-family: 'open-sans-semibold', $base-font-family !default;
 
 /**
  * Font weight of headings
@@ -446,6 +455,13 @@ $side-panel-background-color: $secondary-color !default;
  * @type Color
  */
 $side-panel-text-color: #a7b1c2 !default;
+
+/**
+ * Font stack for the sidebar
+ *
+ * @type List
+ */
+$side-panel-font-family: 'open-sans-semibold', $base-font-family;
 
 /**
  * Font weight of the side panel

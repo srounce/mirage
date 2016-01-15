@@ -8,6 +8,7 @@
   .task {
     border-top: 1px solid $tasks-border-color;
     color: $tasks-text-color;
+    font-family: $side-panel-font-family;
     @include font-size($tasks-font-size, false);
     font-weight: $tasks-font-weight;
     line-height: 0;

@@ -71,10 +71,10 @@
 
   .build-rss-all-icon,
   .build-rss-failed-icon {
-    font-family: 'fontawesomeregular' !important;
 
     &:before {
-      content: "\f09e";
+      @extend %icon-font;
+      content: "\e800";
     }
 
     img {

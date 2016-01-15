@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   bottom: 0;
   color: $side-panel-text-color;
+  font-family: $side-panel-font-family;
   @include font-size($side-panel-font-size);
   font-weight: $side-panel-font-weight;
   left: 0;
@@ -25,6 +26,7 @@
   td,
   th {
     color: $side-panel-text-color;
+    font-family: $side-panel-font-family;
     @include font-size($side-panel-font-size);
     font-weight: $side-panel-font-weight;
   }
@@ -56,14 +58,15 @@
     padding: 14px 1rem;
 
     .collapse {
-      font-family: 'fontawesomeregular';
 
       &:before {
-        content: "\f104";
+        @extend %icon-font;
+        @include font-size(18px);
+        content: "\e802";
       }
 
       &[title='collapse']:before {
-        content: "\f107";
+        content: "\e801";
       }
 
       img {
@@ -73,7 +76,7 @@
   }
 
   .expanded {
-    background-color: $tasks-hover-bg-color;
+    background-color: $tasks-hover-background-color;
 
     .pane-content {
       padding: 0.5rem;
