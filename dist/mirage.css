@@ -590,8 +590,12 @@ img[src$="folder.png"] {
 
 img[src$="48/folder.png"] {
     padding-left: 48px;
+    width: 48px;
+    height: 48px;
 }
 
 img[src$="32/folder.png"] {
     padding-left: 32px;
+    width: 32px;
+    height: 32px;
 }
