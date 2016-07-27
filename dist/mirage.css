@@ -72,23 +72,30 @@ input,select {
 
 #side-panel {
     background-color: #2f4050;
-    background-image: url("https://rawgit.com/srounce/mirage/develop/dist/logo.gif");
-    background-position: 50% 1rem;
-    background-repeat: no-repeat;
     bottom: 0;
     color: #a7b1c2;
     font-family: "open-sans-semibold","open-sans-light","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 13px;
+    font-size: 13px;a
     font-size: 0.8125rem;
     line-height: 1;
     font-weight: bold;
     left: 0;
     overflow: auto;
     padding: 0;
-    padding-top: 190px;
     position: fixed;
     top: 0;
-    width: 250px
+    width: 250px;
+}
+#side-panel:before {
+    content: " ";
+    display: block;
+    height: 190px;
+    width: 250px;
+    top: -10px;
+    background-color: #2f4050;
+    background-image: url("https://rawgit.com/srounce/mirage/develop/dist/logo.gif");
+    background-position: 50% 1rem;
+    background-repeat: no-repeat;
 }
 
 #side-panel p,#side-panel table,#side-panel form,#side-panel td,#side-panel th {
