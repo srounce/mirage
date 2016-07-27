@@ -90,7 +90,7 @@ input,select {
     content: " ";
     display: block;
     height: 190px;
-    width: 250px;
+    width: 100%;
     top: -10px;
     background-color: #2f4050;
     background-image: url("https://rawgit.com/srounce/mirage/develop/dist/logo.gif");
