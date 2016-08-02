@@ -347,15 +347,14 @@ footer {
 }
 
 .mirage-build-progress {
-    margin: 0;
-    margin-right: 1rem;
+    margin: 0 .5rem;
     font-size: 10px;
     position: relative;
     text-indent: -9999em;
     border: 0.75em solid rgba(0,0,0,0.2);
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    float: left
+    float: left;
 }
 
 .mirage-build-progress.md {
@@ -605,4 +604,13 @@ img[src$="32/folder.png"] {
     padding-left: 32px;
     width: 32px;
     height: 32px;
+}
+
+span.status_success, span.status_unstable, span.status_failed {
+    display: inline-block;
+}
+
+span.status_success .label, span.status_unstable .label, span.status_failed .label {
+    display: block;
+    text-align: center;
 }
