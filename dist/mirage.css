@@ -339,7 +339,8 @@ footer {
 }
 
 .warning {
-    color: #f08a24
+    color: #f08a24;
+    background-position: center center;
 }
 
 .info {
